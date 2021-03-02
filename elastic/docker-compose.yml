@@ -1,0 +1,8 @@
+version: "3"
+services: 
+  elastic:
+    build: elastic
+    ports:
+      - "9200:9200"
+    volumes: 
+      - "./elastic_mount:/usr/share/elasticsearch/data"
